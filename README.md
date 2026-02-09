@@ -43,19 +43,22 @@
 ---
 
 ## Структура проекта
+
+```bash
 concurrency_playground/
 ├── app/
-│ ├── main.py # запуск сервиса
-│ ├── db.py # подключение к БД
-│ ├── models.py # ORM модели
-│ ├── service.py # бизнес-логика операций с балансом
-│ └── api.py # эндпоинты FastAPI
+│   ├── main.py          # запуск сервиса
+│   ├── db.py            # подключение к БД
+│   ├── models.py        # ORM модели
+│   ├── service.py       # бизнес-логика операций с балансом
+│   └── api.py           # эндпоинты FastAPI
 ├── tests/
-│ ├── test_race_naive.py # тестируем наивную реализацию
-│ ├── test_with_lock.py # тестируем локи на уровне приложения
-│ ├── test_db_lock.py # тестируем блокировки на уровне БД
-│ └── test_optimistic.py # тестируем optimistic locking
+│   ├── test_race_naive.py    # тестируем наивную реализацию
+│   ├── test_with_lock.py     # тестируем локи на уровне приложения
+│   ├── test_db_lock.py       # тестируем блокировки на уровне БД
+│   └── test_optimistic.py    # тестируем optimistic locking
 └── README.md
+```
 
 
 ---
